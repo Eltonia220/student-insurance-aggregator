@@ -1,11 +1,14 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/student-insurance-aggregator/', // Must match Vercel subpath
   build: {
     outDir: 'dist',
-    assetsDir: 'assets'
+    assetsDir: 'assets',
+    emptyOutDir: true,
+    // Disable sourcemaps in production for smaller builds
+    sourcemap: process.env.NODE_ENV !== 'production'
   }
-})
+});

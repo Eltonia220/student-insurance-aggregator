@@ -1,3 +1,19 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
-  }
+  "rewrites": [
+    { 
+      "source": "/student-insurance-aggregator", 
+      "destination": "/student-insurance-aggregator/index.html" 
+    },
+    { 
+      "source": "/student-insurance-aggregator/(.*)", 
+      "destination": "/student-insurance-aggregator/index.html" 
+    }
+  ],
+  "redirects": [
+    { 
+      "source": "/", 
+      "destination": "/student-insurance-aggregator", 
+      "permanent": false 
+    }
+  ]
+}
