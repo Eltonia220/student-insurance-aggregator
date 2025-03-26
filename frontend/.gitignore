@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+.pnpm-debug.log*
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Build files (except the production dist/ folder)
+dist/
+!dist/index.html
+!dist/assets/
+
+# Editor/IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db

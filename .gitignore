@@ -1,0 +1,14 @@
+# System
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+
+# Environment
+.env
+.env.local
+
+# Logs
+npm-debug.log*
